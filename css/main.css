@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'RobotoSlab_Regular';
+    src: url("./../fonts/RobotoSlab-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSlab_Bold';
+    src: url("./../fonts/RobotoSlab-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url("./../fonts/Montserrat-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat_Bold';
+    src: url("./../fonts/Montserrat-Bold.ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat_Italic';
+    src: url("./../fonts/Montserrat-Italic.ttf");
+    font-style: italic;
+    font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'RobotoSlab_Regular';
+    color: #747474;
+    font-size: 0.875rem;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+.btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: 'Montserrat_Regular';
+    text-align: center;
+}
+
+h2 {
+    position: relative;
+    font-size: 1.25rem;
+    color: #555555;
+    font-family: 'Montserrat_Regular';
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50px;
+    background-color: #555555;
+    top: 52px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.section_subtitle {
+    font-family: 'RobotoSlab_Regular';
+    font-size: 1rem;
+    color: #555555;
+}
+
+
+
+
+
+.welcome {
+    background: url('./../images/Home Background.png'), no-repeat;
+    background-size: cover;
+    height: 770px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.welcome p { 
+    font-size: 1.5rem;
+    font-family: 'Roboto_Regular';    
+}
+
+.welcome .get_started_btn {
+    margin: 24px;
+    width: 180px;
+    height: 50px;
+    background: none;
+    font-size: 1rem;
+    font-family: 'Montserrat_Regular';
+    color: white;
+    border: 2px solid;
+    border-color: white;
+}
+
+.welcome .get_started_btn:hover {
+    background-color: white;
+    color: #c0301c;
+}
+
+section {
+    padding: 100px 0;
+}
+
+
+
+
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    font-family: 'RobotoSlab_Regular';
+    font-size: 0.825rem;
+    color: #555555;
+}
+
+.services_list {
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-around;
+    text-align: center;
+    gap: 45px;
+}
+
+.services_list_item {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.services_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 90px;
+    width: 90px;
+    border: 2px solid #e2e2e2;
+    border-radius: 50%;
+}
+
+.services_logo:hover {
+    background-color: #c0301c;
+}
+
+.services_item_title {
+    font-family: 'Montserrat_Regular';
+}
+
+
+
+
+
+.about_us {
+    display: flex;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px; 
+}
+
+.about_us_list {
+    display: flex;
+    max-width: 1240px;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.team_list {
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+    max-width: 1240px;
+}
+
+.team_member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.member_name {
+    font-family: 'Montserrat_Regular';
+    font-size: 0.825rem;
+    color: #555555;
+}
+
+.member_role {
+    font-family: 'RobotoSlab_Regular';
+    font-size: 0.8125rem;
+    color: #555555;
+}
+
+
+
+
+
+.latest_works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.latest_works_categories {
+    display: flex;
+    gap: 24px;
+}
+
+.category_btn { 
+    font-family: 'RobotoSlab_Regular';
+    font-size: 1rem;
+    color: #555555;
+}
+
+.category_btn:hover {
+    color: #c0301c;
+}
+
+.works_container {
+    max-width: 1240px;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: repeat(3, 320px);
+    gap: 30px;
+}
+
+
+
+
+
+.lets_talk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    background: url('./../images/Background5.png'), no-repeat;
+    background-size: cover;
+    font-family: 'RobotoSlab_Regular';
+    font-size: 	1.875rem;
+    color: white;
+    text-align: center;
+}
+
+.get_in_touch_btn {
+    font-family: 'RobotoSlab_Regular';
+    font-size: 	1.125rem;
+    color: white;
+    border: 2px solid white;
+    padding: 16px 25px;
+}
+
+.get_in_touch_btn:hover {
+    background-color: white;
+    color: #c0301c;
+}
+
+
+
+
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.blog_article {
+    max-width: 1240px;
+    display: flex;
+    gap: 30px;
+}
+
+.blog_text.active {
+    color: #c0301c;
+}
+
+.blog_content {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    color: #777777;
+}
+
+.post_date {
+    display: inline-block;
+    font-family: 'Montcerrat_Bold';
+    color: #777777;
+    text-align: center;
+    border: 2px solid #555555;
+    padding: 10px 17px;
+}
+
+.date_big {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.date_small {
+    font-size: 0.825rem;
+    font-weight: bold;
+}
+
+.blog_title_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.blog_title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+
+.reviews {
+    display: flex;
+    background-color: #f8f8f8;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px; 
+}
+
+.clients_logo_list {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.client_review {
+    max-width: 760px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+
+.client_review_text {
+    font-family: 'RobotoSlab_Regular';
+    font-size: 1.125rem;
+    color: #555555;
+}
+
+.client_review_name {
+    font-family: 'RobotoSlab_Regular';
+    font-size: 1.25rem;
+    color: #555555;
+}
